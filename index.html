@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage and Search your pending tasks in Clicks!</title>
+
+    <link rel="icon" href="./images/favicon.ico" type=".image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <div class="wrap">
+            <section class="heading">
+                <p class="title">ToDo List</p>
+                <p class="sub-title">Manage and Search your pending tasks in Clicks!</p>
+            </section>
+
+            <section class="task-manager">
+                <div class="search-box">
+                    <form class="search">
+                        <input type="text" name="task" placeholder="Search" autocomplete="off">
+                        <i class="bi bi-x-square reset"></i>
+                    </form>
+                </div>
+                <div class="task-box">
+                    <ul class="tasks">
+                        <li>
+                            <span>VD Recording</span>
+                            <i class="bi bi-trash3-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Editing</span>
+                            <i class="bi bi-trash3-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>AD Recordring </span>
+                            <i class="bi bi-trash3-fill delete"></i>
+                        </li>
+                    </ul>
+                    <form class="add">
+                        <input type="text" name="task" placeholder="Add Task" autocomplete="off">
+                        <input type="submit" value="Add">
+                    </form>
+                </div>
+                <div class="message">
+                    <span>You have 3 tasks pending...!</span>
+                    <button class="clear">Clear All</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
