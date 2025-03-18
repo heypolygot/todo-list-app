@@ -95,8 +95,8 @@ clearAll.addEventListener("click", event => {
 
 
 searchForm.addEventListener("keyup", event =>{
-const term = searchForm.task.value.trim().toLowerCase();
-   filterTask(term); 
+    const term = searchForm.task.value.trim().toLowerCase();
+    filterTask(term); 
 });
 
 
