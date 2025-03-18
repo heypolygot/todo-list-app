@@ -65,7 +65,7 @@ clearAll.addEventListener("click", event => {
 
 
 searchForm.addEventListener("keyup", event =>{
-const term = searchForm.task.value.trim();
+const term = searchForm.task.value.trim().toLowerCase();
    filterTask(term); 
 });
 
@@ -73,7 +73,7 @@ const term = searchForm.task.value.trim();
 searchForm.addEventListener("click", event =>{
     if(event.target.classList.contains("reset")){
         searchForm.reset();
-        const term = searchForm.task.value.trim().toLowerCase();
+        const term = searchForm.task.value.trim();        
         filterTask(term);
     }
 });
